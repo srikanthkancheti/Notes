@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    
+<RelativeLayout 
+        android:id="@+id/day_startOn_relativeLayout"
+        android:layout_height="60dp"
+        android:layout_width="fill_parent"
+        android:layout_marginTop="40dp">
+
+    <TextView
+        android:id="@+id/day_start_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="Starts on"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/day_startsOn_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="20dp"
+        android:text="20/04/2015"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/day_starts_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/day_startOn_relativeLayout"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@android:color/darker_gray" />
+    
+    
+    
+    <RelativeLayout 
+        android:id="@+id/day_repeat_relativeLayout"
+        android:layout_height="60dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/day_starts_line">
+`
+    <TextView
+        android:id="@+id/day_repeat_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="Repeat Every"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/day_repeatEvery_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/day_repeat_textView"
+        android:layout_alignBottom="@+id/day_repeat_textView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="1 Days"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/day_repeat_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/day_repeat_relativeLayout"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@android:color/darker_gray" />
+    
+    
+    <RelativeLayout 
+        android:id="@+id/day_ends_relativeLayout"
+        android:layout_height="60dp"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/day_repeat_line">
+`
+    <TextView
+        android:id="@+id/day_end_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="16dp"
+        android:text="Ends"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <TextView
+        android:id="@+id/day_ends_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/day_end_textView"
+        android:layout_alignBottom="@+id/day_end_textView"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:text="Never"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+    </RelativeLayout>
+    
+    <View
+        android:id="@+id/day_ends_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/day_ends_relativeLayout"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@android:color/darker_gray" />
+    
+
+</RelativeLayout>

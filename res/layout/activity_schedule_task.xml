@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="utf-8"?>
+ <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent">
+        
+     
+	<RelativeLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content" >
+    
+	    <RelativeLayout 
+	        android:id="@+id/add_note_relativeLayout"
+	        android:layout_height="wrap_content"
+	        android:layout_width="fill_parent">
+	
+		    <EditText
+		        android:id="@+id/schedule_task_note_editText"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginLeft="20dp"
+		        android:layout_marginRight="10dp"
+		        android:layout_marginTop="16dp"
+		        android:layout_toLeftOf="@+id/schedule_task_add_note_imageView"
+		        android:ems="10"
+		        android:hint="I want to..." >
+		
+		            <requestFocus />
+		    </EditText>
+		    
+		
+		    <ImageView
+		        android:id="@+id/schedule_task_add_note_imageView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBottom="@+id/schedule_task_note_editText"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="20dp"
+		        android:src="@drawable/add_note" />
+	    </RelativeLayout>
+    
+	    <RelativeLayout 
+	        android:id="@+id/setTime_relativeLayout"
+	        android:layout_height="60dp"
+	        android:layout_width="fill_parent"
+	        android:layout_marginTop="40dp"
+	        android:layout_below="@+id/add_note_relativeLayout">
+	
+		    <TextView
+		        android:id="@+id/textView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="16dp"
+		        android:layout_toRightOf="@+id/setTime_imageView"
+		        android:text="Set time"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		
+		    <ImageView
+		        android:id="@+id/setTime_imageView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="20dp"
+		        android:src="@drawable/clock" />
+		
+		    <ImageView
+		        android:id="@+id/imageView1"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignTop="@+id/setTime_imageView"
+		        android:layout_marginRight="20dp"
+		        android:src="@drawable/next_arrow" />
+	    
+	    </RelativeLayout>
+	    
+    <View
+        android:id="@+id/setTime_line"
+        android:layout_width="fill_parent"
+        android:layout_height="0.1dp"
+        android:layout_below="@+id/setTime_relativeLayout"
+        android:layout_marginLeft="7dp"
+        android:layout_marginRight="7dp"
+        android:background="@android:color/darker_gray" />
+    
+	    <RelativeLayout 
+	        android:id="@+id/repeat_relativeLayout"
+	        android:layout_height="60dp"
+	        android:layout_width="fill_parent"
+	        android:layout_below="@+id/setTime_line">
+		
+		    <TextView
+		        android:id="@+id/textView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="16dp"
+		        android:layout_toRightOf="@+id/repeat_imageView"
+		        android:text="Repeat"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+		    <ImageView
+		        android:id="@+id/repeat_imageView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="20dp"
+		        android:src="@drawable/repeat" />
+	
+		    <ImageView
+		        android:id="@+id/imageView2"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignTop="@+id/repeat_imageView"
+		        android:layout_marginRight="20dp"
+		        android:src="@drawable/next_arrow" />
+	    
+		</RelativeLayout>
+    
+    <View
+	    android:id="@+id/repeat_line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.1dp"
+	    android:layout_below="@+id/repeat_relativeLayout"
+	    android:layout_marginLeft="7dp"
+	    android:layout_marginRight="7dp"
+	    android:background="@android:color/darker_gray" />
+    
+		<RelativeLayout 
+		    android:id="@+id/setLocation_relativeLayout"
+		    android:layout_height="60dp"
+		    android:layout_width="fill_parent"
+		    android:layout_below="@+id/repeat_line">
+	
+		    <TextView
+		        android:id="@+id/textView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="24dp"
+		        android:layout_toRightOf="@+id/setLocation_imageView"
+		        android:text="Set location"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+		    <ImageView
+		        android:id="@+id/setLocation_imageView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="28dp"
+		        android:src="@drawable/add_location" />
+	
+		    <ImageView
+		        android:id="@+id/imageView3"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentRight="true"
+		        android:layout_alignTop="@+id/textView3"
+		        android:layout_marginRight="20dp"
+		        android:src="@drawable/next_arrow" />
+		    
+		</RelativeLayout>
+	    
+	<View
+	    android:id="@+id/setLocation_line"
+	    android:layout_width="fill_parent"
+	    android:layout_height="0.1dp"
+	    android:layout_below="@+id/setLocation_relativeLayout"
+	    android:layout_marginLeft="7dp"
+	    android:layout_marginRight="7dp"
+	    android:background="@android:color/darker_gray" />
+	    
+		<RelativeLayout 
+		    android:id="@+id/remainder_relativeLayout"
+		    android:layout_height="60dp"
+		    android:layout_width="fill_parent"
+		    android:layout_below="@+id/setLocation_line">
+	
+		    <TextView
+		        android:id="@+id/textView4"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		 		android:layout_centerVertical="true"
+		        android:layout_marginLeft="20dp"
+		        android:layout_toRightOf="@+id/remainder_imageView"
+		        android:text="Remainder"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+		    <ImageView
+		        android:id="@+id/remainder_imageView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentLeft="true"
+		        android:layout_centerVertical="true"
+		        android:layout_marginLeft="20dp"
+		        android:src="@drawable/notification_bell" />
+	
+		    <TextView
+		        android:id="@+id/remainder_onOff_textView"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignBaseline="@+id/textView4"
+		        android:layout_alignBottom="@+id/textView4"
+		        android:layout_alignParentRight="true"
+		        android:layout_marginRight="21dp"
+		        android:text="ON"
+		        android:textAppearance="?android:attr/textAppearanceLarge" />
+		    
+		    </RelativeLayout>
+	    
+	    <View
+	        android:id="@+id/selected_time_line"
+	        android:layout_width="fill_parent"
+	        android:layout_height="0.1dp"
+	        android:layout_below="@+id/remainder_relativeLayout"
+	        android:layout_marginLeft="7dp"
+	        android:layout_marginRight="7dp"
+	        android:background="@android:color/darker_gray" />
+	    
+
+	</RelativeLayout>
+</ScrollView>
