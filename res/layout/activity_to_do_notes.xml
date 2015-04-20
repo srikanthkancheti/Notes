@@ -32,10 +32,15 @@
 
         <RelativeLayout
             android:id="@+id/grid_view_new_note"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="2dp"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginBottom="2dp"
             android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true" >
+            android:layout_centerVertical="true"
+            android:background="@drawable/new_note_frame">
 
             <ImageView
                 android:id="@+id/add_new_note_imageview"

@@ -17,6 +17,7 @@ import android.view.MotionEvent;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.view.View.OnTouchListener;
+import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -63,6 +64,7 @@ public class SetLocationActivity extends FragmentActivity implements OnClickList
 		case R.id.find_location_button:
 			
 			map_frame.setVisibility(View.VISIBLE);	
+			hideSoftKeyboard();
 			displayLocation();
 			
 		break;
@@ -94,6 +96,16 @@ public class SetLocationActivity extends FragmentActivity implements OnClickList
 		    // Zoom in, animating the camera.
 		    googleMap.animateCamera(CameraUpdateFactory.zoomTo(10), 2000, null);
         }
+	}
+	
+	/**
+	 * Hides the soft keyboard
+	 */
+	public void hideSoftKeyboard() {
+	    if(getCurrentFocus()!=null) {
+	        InputMethodManager inputMethodManager = (InputMethodManager) getSystemService(INPUT_METHOD_SERVICE);
+	        inputMethodManager.hideSoftInputFromWindow(getCurrentFocus().getWindowToken(), 0);
+	    }
 	}
 
 	@Override
