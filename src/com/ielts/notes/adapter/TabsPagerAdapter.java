@@ -1,8 +1,8 @@
 package com.ielts.notes.adapter;
 
-import com.ielts.notes.tabswipe.WeekFragment;
-import com.ielts.notes.tabswipe.MonthFragment;
 import com.ielts.notes.tabswipe.DayFragment;
+import com.ielts.notes.tabswipe.MonthFragment;
+import com.ielts.notes.tabswipe.WeekFragment;
 
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;

@@ -2,7 +2,8 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-
+    
+   
     <LinearLayout
         android:id="@+id/find_location_ll"
         android:layout_width="fill_parent"
@@ -14,7 +15,8 @@
          <RelativeLayout
              android:layout_width="fill_parent"
              android:layout_height="wrap_content"
-             android:orientation="horizontal" >
+             android:orientation="horizontal" 
+             android:layout_marginTop="20dp">
 
 			<ImageView
 			    android:id="@+id/current_location_imageView"
@@ -25,23 +27,15 @@
 			    android:layout_marginRight="23dp"
 			    android:src="@drawable/ic_action_location_found" />
 
-			<ScrollView
-			    android:id="@+id/textAreaScroller"
-			    android:layout_width="fill_parent"
-			    android:layout_height="wrap_content"
-			    android:layout_marginTop="20dp"
-			    android:layout_marginLeft="10dp"
-			    android:layout_alignParentTop="true"
-			    android:layout_toLeftOf="@+id/current_location_imageView"
-			    android:scrollbars="vertical" >
-
-			    <com.ielts.notes.CustomAutocompleteTextview
+			    <com.ielts.notes.map.CustomAutocompleteTextview
 			        android:id="@+id/enter_location_autoCompleteTextView"
 			        android:layout_width="fill_parent"
-			        android:layout_height="80dp"
+			        android:layout_height="wrap_content"
 			        android:ems="10"
+			        android:layout_marginLeft="10dp"
+			        android:layout_toLeftOf="@+id/current_location_imageView"
 			        android:hint="Enter location"/>
-			</ScrollView>
+			
 		    
 		    </RelativeLayout>
 
@@ -59,6 +53,8 @@
 
     </LinearLayout>
     
+   
+    
     <FrameLayout
         android:id="@+id/map_frame_layout"
         android:layout_width="match_parent"
@@ -74,5 +70,6 @@
       
 
     </FrameLayout>
+    
 
 </RelativeLayout>

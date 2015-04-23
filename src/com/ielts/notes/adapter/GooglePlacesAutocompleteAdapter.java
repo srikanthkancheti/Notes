@@ -1,3 +1,4 @@
+package com.ielts.notes.adapter;
 //package com.ielts.notes.adapter;
 //
 //import java.io.IOException;
@@ -17,7 +18,7 @@
 //import android.widget.Filter;
 //import android.widget.Filterable;
 //
-//import com.ielts.notes.SetLocationActivity;
+//import com.ielts.notes.map.SetLocationActivity;
 //
 //public class GooglePlacesAutocompleteAdapter extends ArrayAdapter implements Filterable{
 //	
